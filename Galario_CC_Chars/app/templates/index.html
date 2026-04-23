@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Winx API UI</title></head>
+<body>
+    <h1>Winx Club Characters</h1>
+    <table border="1">
+        <tr><th>Name</th><th>Power</th><th>Actor</th></tr>
+        {% for char in characters %}
+        <tr>
+            <td>{{ char.name }}</td><td>{{ char.power }}</td><td>{{ char.actor_name }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
